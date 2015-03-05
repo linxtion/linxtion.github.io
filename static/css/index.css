@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  background: url(../img/brickwall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  display: inline-block;
+  color: #eee;
+  font-size: 4em;
+}
+
+a:hover {
+  font-size: 5em;
+  color: #222;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.social_icons {
+  margin-left: 20px;
+  width: 100%;
+}
