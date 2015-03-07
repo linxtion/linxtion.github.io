@@ -5,7 +5,6 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
 }
 
 main {
@@ -21,13 +20,15 @@ main {
 
 a {
   display: inline-block;
+  padding: 5px 0;
   color: #eee;
   font-size: 4em;
+  text-shadow: -3px 5px 1px #222;
 }
 
 a:hover {
+  text-shadow: -10px 15px 3px #222;
   font-size: 5em;
-  color: #222;
   -webkit-transition: all .4s ease-out;
   -moz-transition: all .4s ease-out;
   -o-transition: all .4s ease-out;
@@ -36,6 +37,7 @@ a:hover {
 }
 
 .social_icons {
-  margin-left: 20px;
+  text-align: center;
+  margin-top: 30px;
   width: 100%;
 }
