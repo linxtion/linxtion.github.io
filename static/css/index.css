@@ -22,13 +22,13 @@ a {
   display: inline-block;
   padding: 5px 0;
   color: #eee;
-  font-size: 4em;
+  font-size: 9em;
   text-shadow: -3px 5px 1px #222;
 }
 
 a:hover {
   text-shadow: -10px 15px 3px #222;
-  font-size: 5em;
+  font-size: 11em;
   -webkit-transition: all .4s ease-out;
   -moz-transition: all .4s ease-out;
   -o-transition: all .4s ease-out;
@@ -38,6 +38,9 @@ a:hover {
 
 .social_icons {
   text-align: center;
-  margin-top: 30px;
   width: 100%;
+}
+
+.social_icons .social_icon {
+  height: 200px;
 }
