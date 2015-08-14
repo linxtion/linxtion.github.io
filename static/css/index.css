@@ -1,5 +1,7 @@
-html, body {
+html,
+body {
   height: 100%;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 body {
@@ -8,26 +10,47 @@ body {
 }
 
 main {
-  overflow: hidden;
+  background: url(../img/texture_white.jpg) no-repeat center center fixed;
   height: 100%;
+  overflow: hidden;
   position: relative;
-  background: url(../img/brickwall.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 
 a {
-  display: inline-block;
-  color: #eee;
-  font-size: 25vh;
-  text-shadow: -0.6vh 0.6vh 0.3vh #222;
+  color: #222222;
+  text-decoration: none;
 }
 
-a:hover {
-  text-shadow: -2.5vh 2.5vh 0.5vh #222;
-  font-size: 30vh;
+.social-icons,
+.pages {
+  width: 100%;
+  margin-left: 40px;
+}
+
+.pages {
+  margin-top: 40px;
+}
+
+.pages a,
+.social-icon a {
+  text-shadow: -5px 5px 2px #8f8f8f;
+}
+
+.pages a {
+  font-size: 6vh;
+}
+
+.social-icon a {
+  font-size: 12vh;
+}
+
+.social-icon a:hover,
+.pages a:hover {
+  color: #383838;
   -webkit-transition: all .4s ease-out;
   -moz-transition: all .4s ease-out;
   -o-transition: all .4s ease-out;
@@ -35,12 +58,12 @@ a:hover {
   transition: all .4s ease-out;
 }
 
-.social_icons {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.social_icons .social_icon {
-  height: 33%;
-}
+/*
+.pages a:hover {
+  color: #4a4a4a;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}*/
