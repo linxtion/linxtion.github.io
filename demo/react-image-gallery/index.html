@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>React Image Gallery</title>
+    <meta name="description" content="Responsive and flexible carousel component with thumbnail support">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet">
     <link rel="stylesheet" href="../../static/css/ionicons.min.css"/>
     <link rel="stylesheet" href="./app.min.css"/>
+    <link rel="stylesheet" href="./index.css"/>
     <link rel="shortcut icon" type="image/png" href="../../static/img/favicon.png"/>
     <script src="../../static/js/ga.js"></script>
     <script async defer src="//buttons.github.io/buttons.js"></script>
-    <title>react-image-gallery</title>
   </head>
   <body>
-    <h2 style="text-align: center; text-transform: uppercase;">React Image Gallery</h2>
-    <div style="margin: 20px 0; text-align: center;">
-      <a class="github-button"
-         href="https://github.com/xiaolin/react-image-gallery"
-         data-style="mega"
-         aria-label="Star xiaolin/react-image-gallery on GitHub">Star</a>
+    <section class="gallery-demo">
+      <h1 class="gallery-demo-header">React Image Gallery</h1>
+      <h3 class="gallery-demo-header-3">
+        Responsive and flexible carousel component with thumbnail support for ReactJS
+      </h3>
 
-      <a class="github-button"
-         href="https://github.com/xiaolin/react-image-gallery/fork"
-         data-icon="octicon-repo-forked"
-         data-style="mega"
-         aria-label="Fork xiaolin/react-image-gallery on GitHub">Fork</a>
-    </div>
-    <div id="container"></div>
+      <div class="gallery-demo-subheader">
+        <a class="github-button"
+           href="https://github.com/xiaolin/react-image-gallery"
+           data-count-api="/repos/xiaolin/react-image-gallery#stargazers_count"
+           data-style="mega"
+           aria-label="Star xiaolin/react-image-gallery on GitHub">Star</a>
+      </div>
+    </section>
+
+    <div id="container" class="gallery-container"></div>
     <script src="./app.min.js"></script>
   </body>
 </html>
