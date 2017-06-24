@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../static/img/texture_white.jpg) no-repeat center center fixed;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.app {
+  padding: 20px; }
+
+.name {
+  color: #222;
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 14vh;
+  margin: 20px 0;
+  text-shadow: -2px 2px 2px #959595; }
+  @media (max-width: 425px) {
+    .name {
+      font-size: 8vh; } }
+
+.social-icons {
+  margin: 0 0 0 60px;
+  padding: 0; }
+  @media (max-width: 425px) {
+    .social-icons {
+      margin: 0 0 0 20px; } }
+
+.social-icon {
+  list-style: none; }
+  .social-icon + .social-icon {
+    margin-top: 20px; }
+    @media (max-width: 425px) {
+      .social-icon + .social-icon {
+        margin-top: 10px; } }
+
+.links {
+  color: #222;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12vh;
+  text-shadow: -2px 2px 2px #959595; }
+  @media (max-width: 425px) {
+    .links {
+      font-size: 6vh; } }
+  .links:hover {
+    text-shadow: -5px 5px 2px #959595;
+    transition: all .2s ease-in-out; }
+    @media (max-width: 425px) {
+      .links:hover {
+        text-shadow: none;
+        transition: none; } }
+  .links i, .links span {
+    display: inline-block;
+    vertical-align: middle; }
+  .links i {
+    width: 11vh;
+    text-align: center; }
+    @media (max-width: 425px) {
+      .links i {
+        width: 6vh; } }
+  .links span {
+    margin-left: 30px; }
