@@ -1,0 +1,110 @@
+$black: #222;
+$blue: #178ccb;
+$text-color: lighten($black, 20%);
+$yellow: #ffd600;
+$orange: #fb8c00;
+$red: #ee3b3b;
+$purple: #894fba;
+$light-blue: #f4f6f9;
+
+$space-white: #eee;
+$white: #fff;
+
+$fine: 300;
+$normal: 400;
+$bold: 600;
+
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../static/img/texture_white.jpg) no-repeat center center fixed;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.app {
+  padding: 20px;
+}
+
+.name {
+  color: $black;
+  letter-spacing: 5px;
+  font-weight: $bold;
+  font-size: 14vh;
+  margin: 20px 0;
+  text-shadow: -2px 2px 2px lighten($black, 45%);
+
+  @media (max-width: 425px) {
+    font-size: 8vh;
+  }
+}
+
+.social-icons {
+  margin: 0 0 0 60px;
+  padding: 0;
+
+  @media (max-width: 425px) {
+    margin: 0 0 0 20px;
+  }
+}
+
+.social-icon {
+  list-style: none;
+
+  + .social-icon {
+    margin-top: 20px;
+    @media (max-width: 425px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.links {
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12vh;
+  text-shadow: -2px 2px 2px lighten($black, 45%);
+
+  @media (max-width: 425px) {
+    font-size: 6vh;
+  }
+
+  &:hover {
+    text-shadow: -5px 5px 2px lighten($black, 45%);
+    transition: all .2s ease-in-out;
+
+    @media (max-width: 425px) {
+      text-shadow: none;
+      transition: none;
+    }
+  }
+
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    width: 11vh;
+    text-align: center;
+    @media (max-width: 425px) {
+      width: 6vh;
+    }
+  }
+
+  span {
+    margin-left: 30px
+  }
+}
