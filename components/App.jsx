@@ -16,7 +16,7 @@ class App extends React.Component {
             </a>
           </li>
           <li className="social-icon">
-            <a className="links" href="https://www.linkedin.com/in/linxtion">
+            <a className="links" href="https://www.linkedin.com/in/xiaonil">
               <i className="ion-social-linkedin"></i>
               <span>LinkedIn</span>
             </a>
