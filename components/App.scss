@@ -9,6 +9,8 @@ $light-blue: #f4f6f9;
 
 $space-white: #eee;
 $white: #fff;
+$white-glow: 0 0 16px #48c8ff;
+$white-glow-low: 0 0 4px #48c8ff;
 
 $fine: 300;
 $normal: 400;
@@ -17,73 +19,59 @@ $bold: 600;
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: url(../static/img/texture_white.jpg) no-repeat center center fixed;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background: #202124;
 }
 
 .app {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  width: 500px;
 }
 
 .name {
-  color: $black;
-  letter-spacing: 5px;
+  cursor: default;
   font-weight: $bold;
-  font-size: 14vh;
-  margin: 20px 0;
-  text-shadow: -2px 2px 2px lighten($black, 45%);
+  font-size: 36px;
+  text-align: center;
 
-  @media (max-width: 425px) {
-    font-size: 8vh;
-  }
+  letter-spacing: 5px;
+  color: $white;
+  text-shadow: $white-glow;
+  text-transform: uppercase;
 }
 
 .social-icons {
-  margin: 0 0 0 60px;
   padding: 0;
-
-  @media (max-width: 425px) {
-    margin: 0 0 0 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .social-icon {
   list-style: none;
-
-  + .social-icon {
-    margin-top: 20px;
-    @media (max-width: 425px) {
-      margin-top: 10px;
-    }
-  }
 }
 
 .links {
-  color: $black;
+  color: $white;
   text-decoration: none;
   cursor: pointer;
-  font-size: 12vh;
-  text-shadow: -2px 2px 2px lighten($black, 45%);
-
-  @media (max-width: 425px) {
-    font-size: 6vh;
-  }
+  font-size: 48px;
 
   &:hover {
-    text-shadow: -5px 5px 2px lighten($black, 45%);
-    transition: all .2s ease-in-out;
+    text-shadow: $white-glow-low;
+    transition: all 0.2s ease-in-out;
 
     @media (max-width: 425px) {
       text-shadow: none;
@@ -91,20 +79,19 @@ body {
     }
   }
 
-  i, span {
+  i,
+  span {
     display: inline-block;
     vertical-align: middle;
   }
 
   i {
-    width: 11vh;
     text-align: center;
-    @media (max-width: 425px) {
-      width: 6vh;
-    }
   }
 
   span {
-    margin-left: 30px
+    margin-left: 20px;
   }
 }
+
+@import "./GlitchText.scss";

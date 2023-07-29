@@ -1,73 +1,191 @@
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 body {
   margin: 0;
   padding: 0;
-  background: url(../static/img/texture_white.jpg) no-repeat center center fixed;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover; }
+  background: #202124; }
 
 .app {
-  padding: 20px; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.content {
+  width: 500px; }
 
 .name {
-  color: #222;
-  letter-spacing: 5px;
+  cursor: default;
   font-weight: 600;
-  font-size: 14vh;
-  margin: 20px 0;
-  text-shadow: -2px 2px 2px #959595; }
-  @media (max-width: 425px) {
-    .name {
-      font-size: 8vh; } }
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 0 0 16px #48c8ff;
+  text-transform: uppercase; }
 
 .social-icons {
-  margin: 0 0 0 60px;
-  padding: 0; }
-  @media (max-width: 425px) {
-    .social-icons {
-      margin: 0 0 0 20px; } }
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; }
 
 .social-icon {
   list-style: none; }
-  .social-icon + .social-icon {
-    margin-top: 20px; }
-    @media (max-width: 425px) {
-      .social-icon + .social-icon {
-        margin-top: 10px; } }
 
 .links {
-  color: #222;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
-  font-size: 12vh;
-  text-shadow: -2px 2px 2px #959595; }
-  @media (max-width: 425px) {
-    .links {
-      font-size: 6vh; } }
+  font-size: 48px; }
   .links:hover {
-    text-shadow: -5px 5px 2px #959595;
-    transition: all .2s ease-in-out; }
+    text-shadow: 0 0 4px #48c8ff;
+    transition: all 0.2s ease-in-out; }
     @media (max-width: 425px) {
       .links:hover {
         text-shadow: none;
         transition: none; } }
-  .links i, .links span {
+  .links i,
+  .links span {
     display: inline-block;
     vertical-align: middle; }
   .links i {
-    width: 11vh;
     text-align: center; }
-    @media (max-width: 425px) {
-      .links i {
-        width: 6vh; } }
   .links span {
-    margin-left: 30px; }
+    margin-left: 20px; }
+
+.glitchText {
+  position: relative;
+  text-transform: uppercase;
+  padding: 48px;
+  overflow: hidden; }
+
+.glitchText > .glitchChild {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; }
+
+.glitchText > .glitchChild:nth-child(1) {
+  animation: glitch1 5s infinite steps(1, end); }
+
+.glitchText > .glitchChild:nth-child(2) {
+  animation: glitch2 5s infinite steps(1, end); }
+
+.glitchText > .glitchChild:nth-child(3) {
+  animation: glitch3 5s infinite steps(1, end); }
+
+.glitchText > .glitchChild:nth-child(4) {
+  animation: glitch4 5s infinite steps(1, end); }
+
+.glitchText > .glitchChild:nth-child(5) {
+  animation: glitch5 5s infinite steps(1, end); }
+
+@keyframes glitch1 {
+  20% {
+    clip-path: polygon(0 0%, 100% 0%, 100% 33%, 0 33%);
+    transform: translate(-50%, -50%); }
+  30% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); }
+  47% {
+    transform: translate(-45%, -45%); }
+  48% {
+    transform: translate(-50%, -50%); }
+  49% {
+    transform: translate(-55%, -45%); }
+  50% {
+    transform: translate(-50%, -50%); } }
+
+@keyframes glitch2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1;
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0% 60%);
+    transform: translate(-50%, -50%); }
+  21% {
+    transform: translate(-46%, -46%); }
+  22% {
+    transform: translate(-54%, -54%); }
+  30% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); }
+  35% {
+    transform: translate(-45%, -55%); }
+  36% {
+    transform: translate(-50%, -50%); }
+  37% {
+    transform: translate(-40%, -45%); }
+  38% {
+    transform: translate(-50%, -50%); }
+  50% {
+    transform: translate(-45%, -55%); }
+  51% {
+    transform: translate(-50%, -60%); }
+  52% {
+    transform: translate(-45%, -50%); }
+  53% {
+    transform: translate(-50%, -50%); }
+  71% {
+    transform: translate(-40%, -60%); }
+  72% {
+    transform: translate(-45%, -50%); }
+  73% {
+    transform: translate(-40%, -50%); }
+  77% {
+    transform: translate(-50%, -50%); } }
+
+@keyframes glitch3 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1;
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
+    transform: translate(-50%, -50%); }
+  30% {
+    transform: translate(-40%, -40%); }
+  31% {
+    transform: translate(-50%, -50%); }
+  35% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); }
+  45% {
+    transform: translate(-60%, -60%); }
+  46% {
+    transform: translate(-50%, -50%); }
+  47% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); }
+  69% {
+    transform: translate(-40%, -40%); }
+  71% {
+    transform: translate(-50%, -50%); } }
+
+@keyframes glitch4 {
+  0% {
+    opacity: 0; }
+  22% {
+    opacity: 1;
+    clip-path: polygon(0 32%, 100% 32%, 100% 41%, 0% 41%);
+    transform: translate(-48%, -50%); }
+  24% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); } }
+
+@keyframes glitch5 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1;
+    clip-path: polygon(0 59%, 100% 59%, 100% 71%, 0% 71%);
+    transform: translate(-52%, -50%); }
+  25% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100%, 0);
+    transform: translate(-50%, -50%); } }

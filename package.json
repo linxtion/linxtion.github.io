@@ -4,7 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "gulp dev"
+    "start": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,6 @@
   "author": "Xiao Lin",
   "email": "xiao@linxtion.com",
   "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "devDependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
